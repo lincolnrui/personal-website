@@ -5,28 +5,17 @@
 :root {
   --foreground: #000000;
   --background: #ffffff;
-  --accent: #ff9666;
-  --muted: #666666;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #ffffff;
-    --background: #000000;
-    --accent: #ff9666;
-    --muted: #999999;
-  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background: var(--accent);
+  background: black;
   color: white;
 }
 
