@@ -12,18 +12,18 @@ export default function Home() {
           Welcome to my website
         </p>
         <div className="flex gap-8 mt-12">
-          <a 
+          <Link 
             href="/about" 
             className="text-2xl text-gray-600 hover:text-black transition-colors border-2 border-transparent hover:border-b-black"
           >
             About
-          </a>
-          <a 
+          </Link>
+          <Link 
             href="/contact" 
             className="text-2xl text-gray-600 hover:text-black transition-colors border-2 border-transparent hover:border-b-black"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>
