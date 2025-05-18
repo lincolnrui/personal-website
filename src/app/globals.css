@@ -4,7 +4,7 @@
 
 :root {
   --foreground: #000000;
-  --background: #fafafa;
+  --background: #ffffff;
   --accent: #ff9666;
   --muted: #666666;
 }
@@ -35,8 +35,8 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Fade-in animation */
-@keyframes fadeIn {
+/* Animations */
+@keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -47,6 +47,30 @@ html {
   }
 }
 
-.fade-in {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--foreground), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
