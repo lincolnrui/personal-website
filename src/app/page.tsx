@@ -7,19 +7,20 @@ export default function Home() {
         <h1 className="text-5xl md:text-7xl font-light tracking-wide mb-6">
           Lincoln Wang
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-lg mx-auto">
+        <p className="text-xl md:text-2xl text-muted-foreground max-w-lg mx-auto mb-12">
           Welcome to my digital space
         </p>
-        <nav className="flex gap-8 justify-center mt-12">
+        <nav className="flex gap-12 justify-center items-center">
           <Link 
             href="/about"
-            className="text-lg uppercase tracking-wider hover:text-accent transition-colors"
+            className="text-lg uppercase tracking-wider hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-1"
           >
             About
           </Link>
+          <span className="text-muted-foreground">•</span>
           <Link 
             href="/contact"
-            className="text-lg uppercase tracking-wider hover:text-accent transition-colors"
+            className="text-lg uppercase tracking-wider hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-1"
           >
             Contact
           </Link>
