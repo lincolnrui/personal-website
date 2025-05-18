@@ -7,7 +7,7 @@ export default function About() {
         </h1>
         <div className="prose prose-lg dark:prose-invert">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Hello! I'm Lincoln. This space represents my journey, interests, and aspirations.
+            Hello! I&apos;m Lincoln. This space represents my journey, interests, and aspirations.
             [You can customize this text with your own story]
           </p>
           {/* Add more content sections here */}
